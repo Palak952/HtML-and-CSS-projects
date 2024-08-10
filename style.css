@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    position: sticky;
+    
+
+}
+.nav-list{
+/* width: 50%; */
+width: 80%;
+background-color:grey;
+display: flex;
+align-items: center;
+
+}
+.nav-list li{
+list-style:none;
+padding: 26px 30px
+;
+}
+.nav-list li a{
+text-decoration: none;
+color: beige;
+
+
+}
+.nav-list li a::before{
+color:grey;
+}
+  
+.rightnav{
+    background-color:grey;
+    /* width: 50%; */
+    width: 30;
+    text-align: right;
+    padding: 23px 0px;
+    
+}
+#search{
+   padding: 8px 20px;
+   
+   /* font-size: 14px; */
+   /* text-decoration: none; */
+   color: white;
+   border-radius: 28px;
+    margin: 0px 10px;
+
+}
+
+
+.backround{
+    background: url(images/bgi.png);
+    background-size: cover;
+    background-blend-mode: darken;
+    z-index: -1;
+    opacity: 0.8;
+    
+
+}
+
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color:black; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 29%;
+    color: blue;
+  background-color: beige;
+}
+firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    width: 160%;
+padding-left: 2px;
+padding-top: none;
+margin-right: 38px;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+    
+}
+.text-big{
+    font-size: 37px;
+    
+}
+.sm{
+    font-size: 22px;
+    font-family: sans-serif;
+}
+.btn{
+/* padding: 5px; */
+/* border: 1px solid grey;
+border-radius: 2px;
+font-size: 16px;
+background: linear-gradient( white,grey,crimson);
+cursor: pointer; */
+padding: 8px 20px;
+   
+   /* font-size: 14px; */
+   /* text-decoration: none; */
+   color: rgb(67, 6, 36);
+   border-radius: 12px;
+    margin: 0px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pxpx;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+    }
+    .section{
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+max-width: 80%;
+margin: auto;
+
+    }
+    .section-left{
+        flex-direction: row-reverse;
+    }
+    .sectionsubtag{
+        font-size: 19px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 3px 6px;
+        background-position: center;
+        backface-visibility: visible;
+        color: brown;
+        
+      
+    }
+    .sectiontag{
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    
+    
+    }
+    paras{
+font-style: oblique;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .imgfluid{
+width: 350px;
+border: solid burlywood;
+border-radius: 50px;
+
+    }
+    .im-g{
+        width: 300px;
+        border: solid burlywood;
+        border-radius: 50px;
+    }
+    .imges-g{
+width: 300px;
+border: solid burlywood;
+border-radius: 50px;
+
+    }
+    .cocl{
+        background-color: burlywood;
+    }
+    .contact{
+        background-color: burlywood;
+        height:750px;
+    }
+    .text-center{
+        text-align: center;
+        padding: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 45px;
+    }
+    .form{
+        max-width: 500px;
+        margin:  42px auto;
+    }
+    .form input{
+        margin: 14px;
+        padding: 5px 3px;
+        width: 100%;
+        margin: 20px;
+        font-size: 19px;
+        border: 2px solid gray;
+        border-radius: 6px;
+    }
+    .text-footer{
+        text-align: center;
+        padding: 30px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:black;
+        background-color: burlywood;
+        margin-bottom: 30%;
+    }
+    
+    
