@@ -4,51 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coca-Cola</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="utility.css"> -->
 </head>
 
 <body>
-       <section class="sec">
-        <header>
-            <a href="#"><img src="IMG/logo2.svg"></a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">What's New</a></li>
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-        <div class="content">
-            <div class="textbox">
-                <h2>Drink It<br><span>Feel It</span></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At officia sunt ab nisi quia autem illo impedit ducimus cum animi, recusandae itaque. Neque impedit dolore nesciunt culpa vel consectetur maxime.</p>
-                <a href="#">View All Products</a>
-            </div>
-            <div class="imgbox">
-                <img src="IMG/3.png" class="Coca-Cola">
-            </div>
+    <div class="calculator">
+        <h1>Palak Gupta Calculater</h1>
+        <input type="textbox" class="textbox" readonly>
+        <div class="buttons">
+          <button class="button" value="AC">AC</button>
+          <button class="button" value="CE">CE</button>
+          <button class="button" value="%">%</button>
+          <button class="button" value="/">/</button>
+          <button class="button" value="7">7</button>
+          <button class="button" value="8">8</button>
+          <button class="button" value="9">9</button>
+          <button class="button" value="*">*</button>
+          <button class="button" value="4">4</button>
+          <button class="button" value="5">5</button>
+          <button class="button" value="6">6</button>
+          <button class="button" value="-">-</button>
+          <button class="button" value="1">1</button>
+          <button class="button" value="2">2</button>
+          <button class="button" value="3">3</button>
+          <button class="button" value="+">+</button>
+          <button class="button" value=".">.</button>
+          <button class="button" value="0">0</button>
+          <button class="button" value="And">Ans</button>
+          <button class="button" value="=">=</button>
         </div>
-        <ul class="thumb">
-            <li><img src="IMG/3.png" onclick="imgSlider('IMG/888.png');changeBgColor('#E4080A')"></li>
-            <li><img src="IMG/2.png" onclick="imgSlider('IMG/2.png');changeBgColor('#F5CBA7')"></li>
-            <li><img src="IMG/1.png" onclick="imgSlider('IMG/1.png');changeBgColor('#9A06C4')"></li>
-        </ul>
-        <ul class="sci">
-            <li><a href="#"><img src="IMG/facebook.png"></a></li>
-            <li><a href="#"><img src="IMG/twitter.png"></a></li>
-            <li><a href="#"><img src="IMG/instagram.png"></a></li>
-        </ul>
-       </section>
-        <script type="text/javascript">
-            function imgSlider(anything){
-              document.querySelector('.Coca-Cola').src = anything;  
-            }
-             function changeBgColor(color){
-                const sec = document.querySelector('.sec');
-                sec.style.background = color;
-             }
-        </script>
+      </div>
+       <script src="script.js"></script>
+
 </body>
-</html>
+
+</html> 
