@@ -1,230 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poopins:200,300,400,500,600,700,800,900&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poopins',sans-serif; 
 }
-.logo{
-    width: 20%;
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    transition: 0.5s;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.logo img{
-    width: 33%;
-    border: solid white;
-    border-radius: 50px;
+header .logo {
+    position: relative;
+    max-width: 80px;
 }
-.navbar{
+header ul {
+    position: relative;
     display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox {
+    position: relative;
+    max-width: 600px;
+}
+.content .textbox h2 {
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .textbox h2 span {
+    font-size: 2em;
+}
+.content .textbox p {
+    color: #fff;
+}
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content .imgbox {
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+
+}
+.content .imgbox img {
+    max-width: 550px;
+}
+.thumb {
+   position: absolute;
+   left: 50%;
+   bottom: 20px;
+   transform: translateX(-50%);
+   display: flex; 
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
     cursor: pointer;
-    justify-content: center;
-    position: sticky;
-    
-
+    transition: 0.5s;
 }
-.nav-list{
-/* width: 50%; */
-width: 80%;
-background-color:grey;
-display: flex;
-align-items: center;
-
+.thumb li:hover {
+    transform: translateY(-15px);
 }
-.nav-list li{
-list-style:none;
-padding: 26px 30px
-;
+.thumb li img {
+    max-width: 40px;
 }
-.nav-list li a{
-text-decoration: none;
-color: beige;
-
-
-}
-.nav-list li a::before{
-color:grey;
-}
-  
-.rightnav{
-    background-color:grey;
-    /* width: 50%; */
-    width: 30;
-    text-align: right;
-    padding: 23px 0px;
-    
-}
-#search{
-   padding: 8px 20px;
-   
-   /* font-size: 14px; */
-   /* text-decoration: none; */
-   color: white;
-   border-radius: 28px;
-    margin: 0px 10px;
-
-}
-
-
-.backround{
-    background: url(images/bgi.png);
-    background-size: cover;
-    background-blend-mode: darken;
-    z-index: -1;
-    opacity: 0.8;
-    
-
-}
-
-.firstsection{
-    height: 100vh;
-}
-.box-main{
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color:black; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 50%;
-    margin: auto;
-    height: 29%;
-    color: blue;
-  background-color: beige;
-}
-firsthalf{
-    width: 80%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-
 }
-.secondhalf{
-    width: 30%;
+.sci li {
+    list-style: none;
 }
-.secondhalf img{
-    width: 160%;
-padding-left: 2px;
-padding-top: none;
-margin-right: 38px;
-    border: 4px solid white;
-    border-radius: 150px;
-    display: block;
-    margin: auto;
-    
+.sci li a {
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
 }
-.text-big{
-    font-size: 37px;
-    
-}
-.sm{
-    font-size: 22px;
-    font-family: sans-serif;
-}
-.btn{
-/* padding: 5px; */
-/* border: 1px solid grey;
-border-radius: 2px;
-font-size: 16px;
-background: linear-gradient( white,grey,crimson);
-cursor: pointer; */
-padding: 8px 20px;
-   
-   /* font-size: 14px; */
-   /* text-decoration: none; */
-   color: rgb(67, 6, 36);
-   border-radius: 12px;
-    margin: 0px 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 12pxpx;
-    cursor: pointer;
-}
-.btn-sm{
-    padding: 3px 10px;
-    vertical-align: middle;
-    }
-    .section{
-        height: 500px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-max-width: 80%;
-margin: auto;
-
-    }
-    .section-left{
-        flex-direction: row-reverse;
-    }
-    .sectionsubtag{
-        font-size: 19px;
-        font-family: 'Times New Roman', Times, serif;
-        padding: 3px 6px;
-        background-position: center;
-        backface-visibility: visible;
-        color: brown;
-        
-      
-    }
-    .sectiontag{
-        font-size: 30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        
-    
-    
-    }
-    paras{
-font-style: oblique;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .imgfluid{
-width: 350px;
-border: solid burlywood;
-border-radius: 50px;
-
-    }
-    .im-g{
-        width: 300px;
-        border: solid burlywood;
-        border-radius: 50px;
-    }
-    .imges-g{
-width: 300px;
-border: solid burlywood;
-border-radius: 50px;
-
-    }
-    .cocl{
-        background-color: burlywood;
-    }
-    .contact{
-        background-color: burlywood;
-        height:750px;
-    }
-    .text-center{
-        text-align: center;
-        padding: 30px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 45px;
-    }
-    .form{
-        max-width: 500px;
-        margin:  42px auto;
-    }
-    .form input{
-        margin: 14px;
-        padding: 5px 3px;
-        width: 100%;
-        margin: 20px;
-        font-size: 19px;
-        border: 2px solid gray;
-        border-radius: 6px;
-    }
-    .text-footer{
-        text-align: center;
-        padding: 30px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:black;
-        background-color: burlywood;
-        margin-bottom: 30%;
-    }
-    
-    
